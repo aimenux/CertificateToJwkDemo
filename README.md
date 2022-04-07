@@ -15,6 +15,7 @@ In this demo, i m using two ways in order to generate jwk from pfx (or p12) cert
 In order to generate self signed certificate locally, type this command in your terminal :
 >
 > **dotnet dev-certs https -ep [path-to-certificate]/[certificate-name].pfx -p [certificate-password]**
+>
 
 ```
 |      Method | Categories |     Mean |    Error |   StdDev |      Min |      Max | Rank | Allocated |
