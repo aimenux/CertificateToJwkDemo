@@ -5,16 +5,16 @@
 Using various ways to generate jwk from pfx certificate file
 ```
 
-In this demo, i m using two ways in order to generate jwk from pfx (i.e p12) certificate file
+In this demo, i m using two ways in order to generate jwk from pfx (or p12) certificate file
 >
 :one: `CertificateConverterWayOne` : use less code thanks to the class [JsonWebKeyConverter](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.tokens.jsonwebkeyconverter)
 >
 :two: `CertificateConverterWayTwo` : use a little more code based on class [Base64UrlEncoder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.tokens.base64urlencoder)
 >
 
-> In order to generate self signed certificate locally, use this command :
->>
->> dotnet dev-certs https -ep [path-to-certificate]/[certificate-name].pfx -p [certificate-password]
+In order to generate self signed certificate locally, type this command in your terminal :
+>
+> **dotnet dev-certs https -ep [path-to-certificate]/[certificate-name].pfx -p [certificate-password]**
 
 ```
 |      Method | Categories |     Mean |    Error |   StdDev |      Min |      Max | Rank | Allocated |
