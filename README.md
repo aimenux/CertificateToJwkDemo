@@ -26,4 +26,4 @@ In order to generate self signed certificate locally, type this command in your 
 ```
 
 >
-**`Tools`** : vs22, net 6.0
+**`Tools`** : vs22, net 6.0, xunit, fluent-assertion, benchmark-dotnet
