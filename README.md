@@ -9,7 +9,7 @@ In this demo, i m using two ways in order to generate jwk from pfx (or p12) cert
 >
 :one: `CertificateConverterWayOne` : use less code thanks to the class [JsonWebKeyConverter](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.tokens.jsonwebkeyconverter)
 >
-:two: `CertificateConverterWayTwo` : use a little more code based on class [Base64UrlEncoder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.tokens.base64urlencoder)
+:two: `CertificateConverterWayTwo` : use a little more code based on the class [Base64UrlEncoder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.tokens.base64urlencoder)
 >
 
 In order to generate self signed certificate locally, type this command in your terminal :
