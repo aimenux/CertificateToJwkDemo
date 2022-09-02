@@ -26,6 +26,7 @@ public static class Program
         Host.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration((_, config) =>
             {
+                config.AddJsonFile();
                 config.AddUserSecrets();
                 config.AddEnvironmentVariables();
                 config.AddCommandLine(args);

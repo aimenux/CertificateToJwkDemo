@@ -18,8 +18,8 @@ public class CertificateConverterWayTwo : ICertificateConverter
     {
         var certificateFile = _options.Value.CertificateFile;
         var certificatePassword = _options.Value.CertificatePassword;
-        var certificate = new X509Certificate2(certificateFile, certificatePassword);
-        var rsaKey = certificate.GetRSAPublicKey();
+        using var certificate = new X509Certificate2(certificateFile, certificatePassword);
+        using var rsaKey = certificate.GetRSAPublicKey();
         if (rsaKey is null)
         {
             throw new InvalidOperationException("Unsupported certificate: public key is not RSA");
